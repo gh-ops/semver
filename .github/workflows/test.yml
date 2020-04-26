@@ -1,0 +1,19 @@
+name: "units-test"
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - 'releases/*'
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  # unit tests
+  units:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - run: npm ci
+    - run: npm test

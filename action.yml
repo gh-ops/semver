@@ -1,0 +1,23 @@
+name: 'gh-ops-semver'
+description: 'Wait a designated number of milliseconds'
+branding:
+  icon: 'settings'
+  color: 'blue'
+
+outputs:
+  major:
+    description: 'The major version'
+  minor:
+    description: 'The minor version'
+  patch:
+    description: 'The patch version'
+  next_major:
+    description: 'The next major version'
+  next_minor:
+    description: 'The next minor version'
+  next_patch:
+    description: 'The next patch version'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

@@ -5,18 +5,14 @@ branding:
   color: 'blue'
 
 outputs:
-  major:
-    description: 'The major version'
-  minor:
-    description: 'The minor version'
-  patch:
-    description: 'The patch version'
+  version:
+    description: 'The latest version tagged in the repository'
   next_major:
-    description: 'The next major version'
+    description: 'The next version increasing major.'
   next_minor:
-    description: 'The next minor version'
+    description: 'The next version increasing minor.'
   next_patch:
-    description: 'The next patch version'
+    description: 'The next version increasing patch.'
 
 runs:
   using: 'node12'
